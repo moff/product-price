@@ -31,4 +31,11 @@ Because if we have pricing logic definition in Product instead of Category, then
 Category is just an abstraction which is not related to products and their variants.
 Having that we can have flexibility to have exceptions for products in the same category.
 
+## Postman testing 
+
+You can run `docker-compose exec -u laravel app php artisan db:seed` to have sample data.
+
+List of products: GET `http://localhost:8082/api/products`
+Set price endpoint: POST `http://localhost:8082/api/set-product-price`
+
 

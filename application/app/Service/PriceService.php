@@ -62,6 +62,8 @@ class PriceService
                 $e
             );
         }
+
+        DB::commit();
     }
 
     /**

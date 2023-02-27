@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\SetProductPriceController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -21,3 +22,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::post('set-product-price', SetProductPriceController::class)
     ->name('set-product-price');
+
+Route::get('products', [ProductsController::class, 'index'])
+    ->name('products.index');
