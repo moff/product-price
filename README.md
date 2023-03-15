@@ -1,3 +1,7 @@
+# Task description
+
+[Task description](DESCRIPTION.md)
+
 # Installation
 
 - clone repository and cd into it
